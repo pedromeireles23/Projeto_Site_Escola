@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+.linha{
+    margin: 12px 0 ;
+    border: 3px solid black;
+    width: 100%;
+}
+.linha a img{
+    position: absolute;
+    top: 1.9%;
+    background-color: white;
+    left: 69%;
+}
+header{
+    padding: 20px 0;
+    background-color: white;
+
+}
+.container{
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+}
+.logo{
+    position: relative;
+    left: 20%;
+}
+header div h1 img{
+    height: 90px;
+    width: 250px;
+}
+
+.cabecalho{
+  position: relative;
+  left: 34%;
+}
+nav ul{
+    position:relative; 
+    top:40px;
+}
+nav li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    color:black;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+.nada{
+    padding: 40px;
+    margin: 20px;
+}
+.container2{
+    display: flex;
+    padding-left: 25%;
+    margin:0 auto;
+}
+.box1{
+    margin-right: 20px;
+}
+.box1 img{
+    border-radius: 10px;
+}
+.box2{
+    width: 500px;
+    margin-left: 10px;
+}
+.box2 h2{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+.box2 p {
+    margin:50px 0 ;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
