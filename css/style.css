@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -14,6 +15,7 @@
     left: 69%;
 }
 header{
+    z-index: 2;
     padding: 20px 0;
     background-color: #fff;
     position: fixed;
@@ -29,7 +31,7 @@ header{
 }
 .logo{
     position: relative;
-    left: 18%;
+    left: 14%;
     top: -15px;
 }
 header div h1 img{
@@ -38,9 +40,9 @@ header div h1 img{
 }
 
 .cabecalho{
-  position: relative;
-  left: 40%;
-  top: -15px;
+  position: absolute;
+  left: 45%;
+  top: 30%;
 }
 nav ul{
     position:relative; 
@@ -56,7 +58,7 @@ nav a {
     position: relative;
     color:black;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 a::after{
@@ -66,7 +68,7 @@ a::after{
     position: absolute;
     width: 0;
     left: 0;
-    bottom: -49px;
+    bottom: -53px;
 
 
 
@@ -87,6 +89,9 @@ nav a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    position:relative;
+    top: -100px;
+    height: 830px;
 }
 .slide-first img{
     width: 100%;
@@ -94,13 +99,13 @@ nav a:hover::after{
 }
 .slider{
     width:100vw;
-    height: 500px;
+    height: 318px;
     border-radius: 10px;
     overflow: hidden;
 }
 .slides{
     width: 500%;
-    height: 500px;
+    height: 318px;
     display: flex;
 
 }
@@ -114,15 +119,16 @@ nav a:hover::after{
 }
 .slide img{
     width: 100%;
-    height: 500px;
+    height: 318px;
 }
 
 
 .navigation-manual{
     position: absolute;
     width: 800px;
-    margin-top: 470px;
+    top: 60%;
     left: 30%;
+    z-index: 1;
     display: flex;
     justify-content: center;
 }
@@ -143,21 +149,22 @@ nav a:hover::after{
     margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: -20.2%;
+    margin-left: -20%;
 }
 #radio3:checked ~ .first{
-    margin-left: -40.5%;
+    margin-left: -40%;
 }
 #radio4:checked ~ .first{
-    margin-left: -60.55%;
+    margin-left: -60%;
 }
 
 .navigation-auto{
     position: absolute;
+    z-index: 1;
     display: flex;
     width: 800px;
     justify-content: center;
-    margin-top: 470px;
+    top: 60%;
     left: 30%;
 }
 .navigation-auto div{
@@ -183,13 +190,17 @@ nav a:hover::after{
 }
 /*Fechamento do slider */
 .nada{
-    padding: 40px;
+    padding: 30px;
     margin: 20px;
 }
 .container2{
+    position: relative;
+    top: -300px;
     display: flex;
-    padding-left: 25%;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
+    margin-bottom: -150px;
 }
 .box1{
     margin-right: 20px;
@@ -211,4 +222,108 @@ nav a:hover::after{
     margin:50px 0 ;
     font-size: 1.3rem;
     line-height: 1.5;
+}
+
+/* BOX BLACK */
+
+.box-black{
+    padding: 2px ;
+    display: flex;
+    margin: 0 auto;
+    background: #454545;
+    height: 400px;
+    justify-content: center;
+}
+.ensino-medio{
+    margin-top: 20px;
+    width: 20%;
+    height: 80%;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 60px;
+}
+
+.enem{
+    margin-top: 20px;
+    width: 20%;
+    height: 80%;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 60px;
+}
+.tradicionais{
+    margin-top: 20px;
+    width: 20%;
+    height: 80%;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 60px;
+}
+.imagem-logo{
+    height: 80px;
+    margin-right: 10px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+}
+/*footer*/
+
+.box3{
+    background: #00C4CC;
+    height: 440px;
+    width: 100%;
+}
+.footer img{
+    height: 90px;
+    width: 260px;
+    position: relative;
+    top: 70px;
+    left: 18%;
+}
+.redes-sociais a img{
+    height: 30px;
+    width: 30px;
+    margin-right: 60px;
+    position: relative;
+    left: 19%;
+    top: 85px;
+}
+.youtube{
+    height: 40px;
+}
+.central-atendimento{
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 120px;
+    margin-left: 19.5%;
+
+}
+.fale-conosco{
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left:19.5%;
+}
+footer{
+    color: white;
+    background: #003B3D;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
 }

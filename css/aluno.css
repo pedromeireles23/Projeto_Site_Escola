@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+header{
+    background: #00C4CC;
+    height: 150px;
+}
+.h1 h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+}
+.aluno{
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.btn button{
+    padding: 15px;
+    background: #454545;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: none;
+}

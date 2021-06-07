@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/professor.css">
+    <link rel="icon" href="img/logo3.ico">
+    <title>Portal do professor</title>
+</head>
+<body>
+    <header>
+        <h1>Seja Bem-vindo Pedro</h1>
+    </header>
+    <main>
+		<section class="container">
+			<h2>Seus alunos</h2>
+			<label for="filtrar-tabela">Filtre:</label>
+			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do aluno">
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>E-mail</th>
+						<th>Cep</th>
+						<th>Telefone</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-pacientes">
+					<tr class="paciente" id="primeiro-paciente">
+						<td class="info-nome">Paulo Júnior</td>
+						<td class="info-email">paulao23@gmail.com</td>
+						<td class="info-cep">59147-628</td>
+						<td class="info-tel">(31) 9 9923-4423</td>
+					</tr>
+
+					<tr class="paciente">
+						<td class="info-nome">Victor Silva</td>
+						<td class="info-email">vitincruzeiro@gmail.com</td>
+						<td class="info-cep">77018-492</td>
+						<td class="info-tel">(31) 9 9923-4423</td>
+					</tr>
+
+					<tr class="paciente">
+						<td class="info-nome">Ana Almeida</td>
+						<td class="info-email">aninhasupergirl@gmail.com</td>
+						<td class="info-cep">19907-590</td>
+						<td class="info-tel">(31) 9 9923-4423</td>
+					</tr>
+
+					<tr class="paciente">
+						<td class="info-nome">Marcos Dalbem</td>
+						<td class="info-email">marcosdalbem@hotmail.com</td>
+						<td class="info-cep">29182-462</td>
+						<td class="info-tel">(31) 9 9923-4423</td>
+					</tr>
+					<tr class="paciente">
+						<td class="info-nome">Pedro Meireles</td>
+						<td class="info-email">pemeirels@gmail.com</td>
+						<td class="info-cep">68744-550</td>
+						<td class="info-tel">(31) 9 9923-4423</td>
+
+					</tr>
+				</tbody>
+			</table>
+			<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+			<button id="buscar-paciente" class="botao bto-principal">Buscar aluno</button>
+		</section>
+	</main>
+    <script src="js/professor.js"></script>
+    
+</body>
+</html>

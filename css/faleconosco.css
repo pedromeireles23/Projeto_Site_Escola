@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    border: 0;
+}
+/* Header */
+.linha{
+    margin: 12px 0 ;
+    border: 3px solid #454545;
+    width: 100%;
+}
+.linha a img{
+    position: absolute;
+    top: 14%;
+    background-color: white;
+    left: 69%;
+}
+header{
+    z-index: 3;
+    padding: 20px 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 160px;
+    border-bottom:0.5px solid #efefef;
+
+}
+.container{
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+}
+.logo{
+    position: relative;
+    left: 14%;
+    top: -15px;
+}
+header div h1 img{
+    height: 90px;
+    width: 260px;
+}
+
+.cabecalho{
+  position: absolute;
+  left: 45%;
+  top: 30%;
+}
+nav ul{
+    position:relative; 
+    top:40px;
+}
+nav li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 0.9rem;
+}
+
+nav a {
+    position: relative;
+    color:black;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+a::after{
+    content: '';
+    background-color: #00C4CC;
+    height: 3px;
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -53px;
+
+
+
+}
+nav a:hover{
+    font-weight: bold;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+/*Formulário*/
+
+
+.linha2{
+    z-index: 1;
+    position: absolute;
+    top: 27%;
+    border: 7px solid #efefef;
+    width: 100%;
+}
+.linha2 h2{
+    color:#00C4CC ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    background: white;
+    position: absolute;
+    left: 25%;
+    font-weight: bold;
+    margin-top: -20px;
+    width: 250px;
+    text-align: center;
+}
+main form{
+    z-index: 1;
+    position: absolute;
+    top: 39%;
+    left: 24%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    height: 650px;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+form .input-field:first-child{
+    margin-top: 7rem;
+}
+form .input-field:nth-child(7){
+    height: 100px;
+}
+
+.container3{
+    z-index: 2;
+    position: absolute;
+    top: 42%;
+    left: 26%;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#00C4CC;
+
+}
+.container3 h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.container3 h3::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    bottom: -20px;
+    left: 0;
+    border-radius: 8px;
+    background:#00C4CC;
+}
+.container2{
+    z-index: 2;
+    position: absolute;
+    top: 49%;
+    left: 26%;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+.input-btn{
+    display: flex;
+    flex-direction: column;
+}
+.input-field{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+}
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:#00C4CC;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+.input-field input:focus ~ .underline::after{
+transform: scaleX(1);
+}
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: #00C4CC;
+
+}
+.input-field input::placeholder{
+    color: #00C4CC;
+
+}
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding:0.4rem;
+    background: #00C4CC;
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+}
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background:#00C4CC ;
+}
+
+/*telefone*/
+
+.telefone{
+    position: absolute;
+    top: 4%;
+    left: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+}
+.telefone img{
+    height: 20px;
+    width: 20px;
+}
+.telefone p {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+/* Box com o footer */
+
+.box3{
+    z-index: 1;
+    margin-top: 20%;
+    background: #00C4CC;
+    height: 440px;
+    width: 100%;
+    position: relative;
+    top: 750px;
+}
+.footer img{
+    height: 90px;
+    width: 260px;
+    position: relative;
+    top: 70px;
+    left: 18%;
+}
+.redes-sociais a img{
+    height: 30px;
+    width: 30px;
+    margin-right: 60px;
+    position: relative;
+    left: 19%;
+    top: 85px;
+}
+.youtube{
+    height: 40px;
+}
+.central-atendimento{
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 120px;
+    margin-left: 19.5%;
+
+}
+.fale-conosco{
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left:19.5%;
+}
+.footer-original{
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    background: #003B3D;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}

@@ -7,7 +7,6 @@ body{
     display: flex;
 }
 .container{
-    background:linear-gradient(90deg,#003B3D,#36C3C8,#00C4CC );
     width: 50%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -15,8 +14,14 @@ body{
 }
 .container img{
     position: absolute;
-    top: 40%;
-    left: 13%;
+    top: 36%;
+    left: 9%;
+}
+.container2{
+    width: 50%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(270deg,#003B3D,#36C3C8,#00C4CC) ;
 }
 
 .container3{
@@ -29,7 +34,7 @@ body{
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 30%;
-    left: 70%;
+    left: 65%;
 }
 .container3 h2{
     font-size: 1.3rem;
@@ -91,7 +96,7 @@ transform: scaleX(1);
 .input-field input::placeholder{
     color: #00C4CC;
 }
-form input[type="submit"] {
+form input[type="button"] {
     margin-top: 2rem;
     padding:0.4rem;
     background: #00C4CC;
@@ -102,7 +107,15 @@ form input[type="submit"] {
     transition: all 0.3s ease;
 
 }
-form input[type="submit"]:hover{
+form input[type="button"]:hover{
     letter-spacing: 0.5px;
     background: linear-gradient(90deg,#003B3D,#36C3C8,#00C4CC) ;
+}
+.professor{
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.professor a {
+    text-decoration: none;
+    color:#00C4CC ;
 }
